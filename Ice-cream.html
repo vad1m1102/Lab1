@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <title>Ice cream</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+    </head>
+<body>
+        <div class="ice-cream">
+         <h1> Розрахунок вартості морозива </h1>
+         <div class="form-section">
+             <label>Розмір стаканчика: </label><br>
+            <label> <input type="radio" name="size" value="small" checked> Маленький (10 грн)</label> <br>
+            <label> <input type="radio" name="size" value="large" checked> Великий  (25 грн)</label>
+         </div>
+        <div class="form-section">
+            <label>Начинки: </label> <br>
+            <labeL><input type="checkbox" name="topping" value="chocolate">Шоколад (+5 грн)</labeL><br>
+           <label><input type="checkbox" name="topping" value="caramel">Карамель (+6 грн)</label> <br>
+            <label><input type="checkbox" name="topping" value="berries">Ягоди (+10 грн)</label>
+        </div>
+        <div class="form-section">
+            <label> <input type="checkbox" id="marshmellow">Додати маршмелоу (+5 грн)</label>
+        </div>
+        <button onclick="CalculatePrice()">Розрахувати вартість</button>
+        <div class="result" id="result"></div>
+        </div>
+    </body>
+</html>
